@@ -2,14 +2,17 @@ package editoreliminar;
 
 /**
  *
- * @author Luis
+ * @author Grupo 3
+ * @version 1
+ * @parametros
+ * @comentarios: falta la funcion por medio de combinacion de teclas
  */
 public class CuadroDialogo extends javax.swing.JFrame {
 
     public CuadroDialogo() {
         initComponents();
-    }
-
+    }//Fin CuadroDialogo
+    //Instancia de la clase Datos
     Datos dt = new Datos();
     
     @SuppressWarnings("unchecked")
@@ -71,11 +74,12 @@ public class CuadroDialogo extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Evento que hace el llamado del metodo capturarDatos
     private void AreaTextoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_AreaTextoKeyTyped
         dt.capturarDatos(evt);
     }//GEN-LAST:event_AreaTextoKeyTyped
-
+    //Evento que hace el llamado de los metodos que imprimen y eliminan los datos almacenados en la LinkedList
     private void btn_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminarActionPerformed
         dt.imprimirDatos();
         dt.eliminarDatos();
@@ -88,4 +92,4 @@ public class CuadroDialogo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
-}
+}//Fin clase CuadroDialogo
